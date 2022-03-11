@@ -1,5 +1,5 @@
-const date1 = new Date('May 27, 2024')
-const date2 = new Date('Jan 5 , 2022')
+// const date1 = new Date('May 27, 2024')
+// const date2 = new Date('Jan 5 , 2022')
 
 //reduce this to a single arrow function
 // const getDays = (date1,date2)=>{
@@ -14,5 +14,9 @@ const date2 = new Date('Jan 5 , 2022')
 // return time
 // }
 
-
+const date1 = new Date('May 27, 2024').getTime()
+const date2 = new Date('Jan 5 , 2022').getTime()
+const getDays = (date2,date1)=>((date2 - date1)/(1000 * 60 * 60 * 24));
 console.log(getDays(date1, date2))
+
+// console.log(getDays(date1, date2))
